@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>64realtors — Coming Soon</title>
+<style>
+  :root{
+    --ink:#14263a;
+    --paper:#eef1f4;
+    --brick:#b4432c;
+    --line:#c9d0d8;
+    --muted:#52606f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--ink:#e8edf2;--paper:#10202f;--brick:#e0704f;--line:#2b3d50;--muted:#9fb0c0}
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+    background-image:
+      linear-gradient(var(--line) 1px,transparent 1px),
+      linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;
+    background-position:center;
+  }
+  main{
+    background:var(--paper);
+    border:2px solid var(--ink);
+    max-width:640px;width:100%;
+    padding:48px 40px;
+    position:relative;
+  }
+  .plot{
+    position:absolute;top:-2px;right:-2px;
+    background:var(--brick);color:#fff;
+    font:600 .85rem/1 system-ui,Arial,sans-serif;
+    padding:10px 14px;
+  }
+  h1{
+    font-size:clamp(2.6rem,9vw,4.4rem);
+    line-height:1;letter-spacing:-.02em;font-weight:700;
+  }
+  h1 span{color:var(--brick)}
+  .tag{margin-top:20px;font-size:1.25rem;color:var(--muted);line-height:1.5}
+  h2{margin-top:36px;font-size:1.6rem;font-weight:400;font-style:italic}
+  p.note{margin-top:12px;color:var(--muted);line-height:1.6;max-width:46ch}
+  .contact{
+    margin-top:32px;padding-top:24px;border-top:1px solid var(--line);
+    font-family:system-ui,Arial,sans-serif;font-size:1rem;line-height:1.8;
+  }
+  .contact a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--brick);text-underline-offset:3px}
+  .contact a:focus-visible{outline:3px solid var(--brick);outline-offset:3px}
+  @media (max-width:480px){main{padding:40px 24px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="plot" aria-hidden="true">Plot 64</div>
+  <h1>64<span>realtors</span></h1>
+  <p class="tag">Homes, plots and properties — finding the right one for you.</p>
+  <h2>Our website is coming soon.</h2>
+  <p class="note">We're building a new place to browse listings and get in touch. Until it's ready, reach us directly.</p>
+  <div class="contact">
+    Name:  <a href="Dipak Prajapati">Dipak Prajapati</a><br>
+    Phone: <a href="tel:++919726659963">+91 97266 59963</a><br>
+    Email: <a href="mailto:64realtors@gmail.com">64realtors@gmail.com</a>
+  </div>
+  <div class="contact">
+    Name:  <a href="Suryarajsinh Chauhan">Suryarajsinh Chauhan</a><br>
+    Phone: <a href="tel:++917096006464">+91 70960 06464</a><br>
+    Email: <a href="mailto:64realtors@gmail.com">64realtors@gmail.com</a>
+  </div>
+</main>
+</body>
+</html>
