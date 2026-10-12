@@ -1,0 +1,276 @@
+{
+  "company": {
+    "name": "64 Realtors",
+    "tagline": "Buy | Sell | Invest",
+    "logo": "images/logo.png",
+    "website": "https://64realtors.github.io/",
+    "email": "64realtors@gmail.com",
+    "year": 2026,
+    "copyright": "© 2026 64 Realtors. All rights reserved."
+  },
+  "contacts": [
+    {
+      "name": "Dipak Prajapati",
+      "role": "Partner / Realtor",
+      "phone": "+91 97266 59963",
+      "whatsapp": "919726659963"
+    },
+    {
+      "name": "Suryarajsinh Chauhan",
+      "role": "Partner / Realtor",
+      "phone": "+91 70960 06464",
+      "whatsapp": "917096006464"
+    }
+  ],
+  "address": {
+    "lines": [
+      "416, 4th Floor, Radhe Infinity",
+      "Nr. Rakhshashakti Circle, Urjanagar-1",
+      "Kudasan, Gandhinagar, Gujarat"
+    ],
+    "pincode": "382426",
+    "mapLink": "https://maps.app.goo.gl/MHGFwp7sZcdNwyUB8",
+    "mapEmbed": "https://maps.google.com/maps?q=Radhe+Infinity,+Urjanagar-1,+Kudasan,+Gandhinagar,+Gujarat+382426&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  },
+  "social": {
+    "instagram": "https://instagram.com/64realtors",
+    "facebook": "https://facebook.com/64realtors",
+    "youtube": "",
+    "linkedin": ""
+  },
+  "hero": {
+    "title": "Unlocking Gandhinagar's Finest Real Estate Opportunities",
+    "subtitle": "Trusted advisory for luxury homes, prime residential plots, and high-yield commercial investments across Gandhinagar and GIFT City corridor.",
+    "image": "images/hero-bg.jpg",
+    "buttons": [
+      {
+        "label": "Explore Properties",
+        "link": "#properties"
+      },
+      {
+        "label": "WhatsApp Enquiry",
+        "link": "https://wa.me/919726659963?text=Hello%2064%20Realtors,%20I%20am%20interested%20in%20exploring%20properties%20in%20Gandhinagar."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "100%",
+      "label": "Verified Titles"
+    },
+    {
+      "value": "500+",
+      "label": "Happy Clients"
+    },
+    {
+      "value": "GIFT City",
+      "label": "Growth Corridor"
+    },
+    {
+      "value": "0%",
+      "label": "Hidden Costs"
+    }
+  ],
+  "about": {
+    "title": "Your Trusted Real Estate Partners in Gandhinagar",
+    "text": [
+      "At 64 Realtors, we bring unmatched market intelligence, transparent valuations, and personalized attention to your property journey in Gandhinagar.",
+      "Led by Dipak Prajapati and Suryarajsinh Chauhan, we specialize in luxury residential bungalows, modern high-rise apartments, strategic commercial showrooms at Radhe Infinity, and high-growth investment plots in the GIFT City corridor."
+    ],
+    "image": "images/about-luxury.jpg"
+  },
+  "services": [
+    {
+      "icon": "buy",
+      "title": "Buy Prime Properties",
+      "text": "Handpicked luxury villas, 2/3/4 BHK apartments, and prime plots with 100% clear titles and superior lifestyle amenities."
+    },
+    {
+      "icon": "sell",
+      "title": "Sell at Top Market Value",
+      "text": "Comprehensive valuation, professional presentation, and direct outreach to qualified buyers to maximize your property's value."
+    },
+    {
+      "icon": "invest",
+      "title": "Strategic Growth Investments",
+      "text": "High-rental yield commercial offices, road-facing retail shops, and high-appreciation land along Gandhinagar - GIFT City corridor."
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "title": "4 BHK Ultra Luxury Villa with Private Garden & Pool",
+      "type": "Villa",
+      "status": "For Sale",
+      "price": "₹ 2.85 Cr",
+      "area": "4,200 sq.ft",
+      "bedrooms": 4,
+      "location": "Kudasan, Gandhinagar",
+      "featured": true,
+      "images": [
+        "images/properties/villa-1.jpg"
+      ],
+      "description": "Exclusive 4 BHK luxury villa with private landscaped garden, swimming pool, Italian marble flooring, 2 covered car parks, modular kitchen, and clubhouse access in premium gated enclave.",
+      "whatsappContact": 0
+    },
+    {
+      "id": 2,
+      "title": "3 BHK Premium High-Rise Flat with Sky Deck",
+      "type": "Flat",
+      "status": "For Sale",
+      "price": "₹ 1.15 Cr",
+      "area": "2,150 sq.ft",
+      "bedrooms": 3,
+      "location": "Urjanagar-1, Gandhinagar",
+      "featured": true,
+      "images": [
+        "images/properties/flat-1.jpg"
+      ],
+      "description": "Elegant 3 BHK corner apartment with panoramic skyline views, double-height balcony, 24/7 security, gym, children play area, and close proximity to Rakhshashakti Circle.",
+      "whatsappContact": 1
+    },
+    {
+      "id": 3,
+      "title": "Prime Road-Facing Commercial Showroom / Retail Shop",
+      "type": "Shop",
+      "status": "For Rent",
+      "price": "₹ 75,000 / mo",
+      "area": "1,450 sq.ft",
+      "bedrooms": 0,
+      "location": "Radhe Infinity, Kudasan",
+      "featured": true,
+      "images": [
+        "images/properties/shop-1.jpg"
+      ],
+      "description": "High-footfall ground/first floor showroom space located at Radhe Infinity, Gandhinagar. Perfect for retail outlets, clinics, luxury brand stores, or bank branches.",
+      "whatsappContact": 0
+    },
+    {
+      "id": 4,
+      "title": "Gated Community Residential Plot near GIFT City Corridor",
+      "type": "Plot",
+      "status": "For Sale",
+      "price": "₹ 1.65 Cr",
+      "area": "500 Sq.Yard",
+      "bedrooms": 0,
+      "location": "Near GIFT City Road, Gandhinagar",
+      "featured": true,
+      "images": [
+        "images/properties/plot-1.jpg"
+      ],
+      "description": "NA / NOC cleared premium residential plot with 40-foot wide asphalt road frontage, underground utilities, boundary wall, security gate, and instant registry ready.",
+      "whatsappContact": 1
+    },
+    {
+      "id": 5,
+      "title": "Modern Corporate Office Space at Business Hub",
+      "type": "Office",
+      "status": "For Rent",
+      "price": "₹ 65,000 / mo",
+      "area": "1,850 sq.ft",
+      "bedrooms": 0,
+      "location": "GIFT City Business Corridor, Gandhinagar",
+      "featured": true,
+      "images": [
+        "images/properties/office-1.jpg"
+      ],
+      "description": "Fully furnished Grade-A corporate office with conference room, executive cabins, 24/7 power backup, central AC, cafeteria, and ample visitor parking.",
+      "whatsappContact": 0
+    },
+    {
+      "id": 6,
+      "title": "5 BHK Signature Penthouse with Private Sky Lounge & Terrace",
+      "type": "Penthouse",
+      "status": "For Sale",
+      "price": "₹ 3.90 Cr",
+      "area": "5,600 sq.ft",
+      "bedrooms": 5,
+      "location": "Bhaijipura Circle, Gandhinagar",
+      "featured": true,
+      "images": [
+        "images/properties/penthouse-1.jpg"
+      ],
+      "description": "Ultra-luxurious double-storey penthouse featuring private terrace jacuzzi, personal elevator access, panoramic city lights view, servant quarters, and 4 dedicated parking slots.",
+      "whatsappContact": 1
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "100% Clear Title Verification",
+      "text": "Every listed plot, flat, and commercial property undergoes rigorous legal and document due diligence before we present it to you."
+    },
+    {
+      "title": "Gandhinagar & GIFT City Specialists",
+      "text": "In-depth hyper-local knowledge of upcoming infrastructure, metro connectivity, DP plans, and high-growth appreciation zones."
+    },
+    {
+      "title": "Transparent & Direct Dealings",
+      "text": "Direct one-to-one consultation with partners Dipak Prajapati and Suryarajsinh Chauhan without hidden brokerages or surprises."
+    },
+    {
+      "title": "End-to-End Transaction Support",
+      "text": "From site visits and price negotiations to registry assistance, stamp duty guidance, and home loan liaison."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Dr. R. Patel",
+      "text": "Found an exceptional 4 BHK luxury home in Kudasan through 64 Realtors. Dipak and Suryarajsinh handled the paperwork with total transparency. Highly recommended!",
+      "rating": 5
+    },
+    {
+      "name": "V. Sharma",
+      "text": "Invested in commercial retail space at Radhe Infinity. Their market insights and legal checks gave me immense peace of mind.",
+      "rating": 5
+    },
+    {
+      "name": "A. Desai",
+      "text": "Seamless buying experience from property visits to final registration near GIFT City corridor. Truly professional realtors in Gandhinagar.",
+      "rating": 5
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which areas in Gandhinagar do 64 Realtors cover?",
+      "a": "We specialize in prime areas including Kudasan, Raysan, Urjanagar, Randesan, Bhaijipura, GIFT City road corridor, Infocity, and surrounding high-growth sectors."
+    },
+    {
+      "q": "How do you verify property documentation and titles?",
+      "a": "We thoroughly examine revenue records, 7/12 & 8A extracts, NA orders, RERA registration, TP/DP zoning, and municipal approvals before onboarding any listing."
+    },
+    {
+      "q": "Can I arrange a personalized site visit?",
+      "a": "Yes! You can contact Dipak Prajapati (+91 97266 59963) or Suryarajsinh Chauhan (+91 70960 06464) directly via Phone or WhatsApp to schedule a convenient visit."
+    },
+    {
+      "q": "Do you assist with home loans and legal registration?",
+      "a": "Yes, we provide complete assistance with bank home loans, legal drafting, stamp duty calculations, and the sub-registrar office registration process."
+    }
+  ],
+  "seo": {
+    "title": "Best Real Estate Agents in Gandhinagar | 64 Realtors | Buy, Sell & Invest Properties",
+    "description": "Top-rated real estate consultancy in Gandhinagar. 64 Realtors offers luxury 2/3/4 BHK flats, premium villas, residential plots & commercial shops in Kudasan, Raysan, Urjanagar & GIFT City corridor. Contact Dipak Prajapati (+91 97266 59963) & Suryarajsinh Chauhan (+91 70960 06464).",
+    "keywords": "real estate Gandhinagar, best real estate agent Gandhinagar, top property dealers Kudasan, 64 Realtors, luxury flats in Gandhinagar, villas for sale Gandhinagar, residential plots near GIFT City, commercial property Gandhinagar, office space Kudasan, buy flat Gandhinagar, real estate consultants Gujarat, property broker Gandhinagar, Dipak Prajapati realtor, Suryarajsinh Chauhan 64 realtors, Radhe Infinity Kudasan property, GIFT City corridor real estate",
+    "areaServed": [
+      "Gandhinagar",
+      "Kudasan",
+      "Raysan",
+      "Urjanagar",
+      "Randesan",
+      "Bhaijipura",
+      "GIFT City Corridor",
+      "Sargasan",
+      "Infocity",
+      "Gujarat"
+    ],
+    "geo": {
+      "latitude": 23.1884,
+      "longitude": 72.6300
+    },
+    "rating": {
+      "ratingValue": "4.9",
+      "reviewCount": "48",
+      "bestRating": "5"
+    }
+  }
+}

@@ -1,80 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>64realtors — Coming Soon</title>
-<style>
-  :root{
-    --ink:#14263a;
-    --paper:#eef1f4;
-    --brick:#b4432c;
-    --line:#c9d0d8;
-    --muted:#52606f;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security & Privacy Meta Tags (OWASP Best Practice) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <!-- SEO Primary Meta Tags -->
+  <meta name="description" content="Top-rated real estate consultancy in Gandhinagar. 64 Realtors offers luxury 2/3/4 BHK flats, premium villas, residential plots & commercial shops in Kudasan, Raysan, Urjanagar & GIFT City corridor. Contact Dipak Prajapati (+91 97266 59963) & Suryarajsinh Chauhan (+91 70960 06464).">
+  <meta name="keywords" content="real estate Gandhinagar, best real estate agent Gandhinagar, top property dealers Kudasan, 64 Realtors, luxury flats in Gandhinagar, villas for sale Gandhinagar, residential plots near GIFT City, commercial property Gandhinagar, office space Kudasan, buy flat Gandhinagar, real estate consultants Gujarat, property broker Gandhinagar, Dipak Prajapati realtor, Suryarajsinh Chauhan 64 realtors, Radhe Infinity Kudasan property, GIFT City corridor real estate">
+  <meta name="author" content="64 Realtors">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#0C0F15">
+  <link rel="canonical" href="https://64realtors.github.io/">
+
+  <!-- Local SEO & Geo Meta Tags for Google Local Search -->
+  <meta name="geo.region" content="IN-GJ">
+  <meta name="geo.placename" content="Gandhinagar, Gujarat, India">
+  <meta name="geo.position" content="23.1884;72.6300">
+  <meta name="ICBM" content="23.1884, 72.6300">
+  <meta name="coverage" content="Gandhinagar, Kudasan, Raysan, Urjanagar, GIFT City, Ahmedabad">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="64 Realtors">
+  <meta property="og:url" content="https://64realtors.github.io/">
+  <meta property="og:title" content="Best Real Estate Agents in Gandhinagar | 64 Realtors">
+  <meta property="og:description" content="Explore luxury flats, villas, plots & commercial spaces in Kudasan, Urjanagar & GIFT City corridor with Gandhinagar's trusted real estate advisors.">
+  <meta property="og:image" content="https://64realtors.github.io/images/logo.png">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best Real Estate Agents in Gandhinagar | 64 Realtors">
+  <meta name="twitter:description" content="Leading real estate consultants in Gandhinagar & GIFT City corridor. Luxury villas, flats, plots & commercial investments.">
+  <meta name="twitter:image" content="https://64realtors.github.io/images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data for Local Business & Real Estate Agency -->
+  <script type="application/ld+json" id="structured-data-script">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://64realtors.github.io/#organization",
+    "name": "64 Realtors",
+    "url": "https://64realtors.github.io/",
+    "logo": "https://64realtors.github.io/images/logo.png",
+    "image": "https://64realtors.github.io/images/logo.png",
+    "description": "Top-rated real estate advisory specializing in luxury flats, villas, plots, and commercial properties in Gandhinagar, Kudasan, and GIFT City corridor.",
+    "telephone": "+919726659963",
+    "email": "64realtors@gmail.com",
+    "priceRange": "₹ 25 Lakh - ₹ 15 Crore",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, Cheque, Bank Transfer",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.1884,
+      "longitude": 72.6300
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "416, 4th Floor, Radhe Infinity, Nr. Rakhshashakti Circle, Urjanagar-1",
+      "addressLocality": "Kudasan, Gandhinagar",
+      "addressRegion": "Gujarat",
+      "postalCode": "382426",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Gandhinagar" },
+      { "@type": "AdministrativeArea", "name": "Kudasan" },
+      { "@type": "AdministrativeArea", "name": "Raysan" },
+      { "@type": "AdministrativeArea", "name": "Urjanagar" },
+      { "@type": "AdministrativeArea", "name": "GIFT City Corridor" },
+      { "@type": "AdministrativeArea", "name": "Gujarat" }
+    ],
+    "hasMap": "https://maps.app.goo.gl/MHGFwp7sZcdNwyUB8",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "48",
+      "bestRating": "5"
+    }
   }
-  @media (prefers-color-scheme: dark){
-    :root{--ink:#e8edf2;--paper:#10202f;--brick:#e0704f;--line:#2b3d50;--muted:#9fb0c0}
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
-  body{
-    background:var(--paper);color:var(--ink);
-    font-family:Georgia,"Times New Roman",serif;
-    display:flex;align-items:center;justify-content:center;
-    padding:24px;
-    background-image:
-      linear-gradient(var(--line) 1px,transparent 1px),
-      linear-gradient(90deg,var(--line) 1px,transparent 1px);
-    background-size:64px 64px;
-    background-position:center;
-  }
-  main{
-    background:var(--paper);
-    border:2px solid var(--ink);
-    max-width:640px;width:100%;
-    padding:48px 40px;
-    position:relative;
-  }
-  .plot{
-    position:absolute;top:-2px;right:-2px;
-    background:var(--brick);color:#fff;
-    font:600 .85rem/1 system-ui,Arial,sans-serif;
-    padding:10px 14px;
-  }
-  h1{
-    font-size:clamp(2.6rem,9vw,4.4rem);
-    line-height:1;letter-spacing:-.02em;font-weight:700;
-  }
-  h1 span{color:var(--brick)}
-  .tag{margin-top:20px;font-size:1.25rem;color:var(--muted);line-height:1.5}
-  h2{margin-top:36px;font-size:1.6rem;font-weight:400;font-style:italic}
-  p.note{margin-top:12px;color:var(--muted);line-height:1.6;max-width:46ch}
-  .contact{
-    margin-top:32px;padding-top:24px;border-top:1px solid var(--line);
-    font-family:system-ui,Arial,sans-serif;font-size:1rem;line-height:1.8;
-  }
-  .contact a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--brick);text-underline-offset:3px}
-  .contact a:focus-visible{outline:3px solid var(--brick);outline-offset:3px}
-  @media (max-width:480px){main{padding:40px 24px}}
-</style>
+  </script>
 </head>
 <body>
-<main>
-  <div class="plot" aria-hidden="true">Plot 64</div>
-  <h1>64<span>realtors</span></h1>
-  <p class="tag">Homes, plots and properties — finding the right one for you.</p>
-  <h2>Our website is coming soon.</h2>
-  <p class="note">We're building a new place to browse listings and get in touch. Until it's ready, reach us directly.</p>
-  <div class="contact">
-    Name:  <a href="Dipak Prajapati">Dipak Prajapati</a><br>
-    Phone: <a href="tel:++919726659963">+91 97266 59963</a><br>
-    Email: <a href="mailto:64realtors@gmail.com">64realtors@gmail.com</a>
+
+  <!-- Local Server Fallback Notice -->
+  <div id="dataErrorNotice" class="data-error-notice" role="alert">
+    <strong>Notice:</strong> Unable to load <code>data/site.json</code> directly. When viewing locally, browsers block file fetching for security. Please run a local web server (e.g. <code>python3 -m http.server 8000</code>) or view on <a href="https://64realtors.github.io/" class="notice-link">GitHub Pages</a>.
   </div>
-  <div class="contact">
-    Name:  <a href="Suryarajsinh Chauhan">Suryarajsinh Chauhan</a><br>
-    Phone: <a href="tel:++917096006464">+91 70960 06464</a><br>
-    Email: <a href="mailto:64realtors@gmail.com">64realtors@gmail.com</a>
+
+  <!-- 1. STICKY HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo-link" id="headerLogoLink" aria-label="64 Realtors Home">
+        <img src="images/logo.png" alt="64 Realtors Logo" class="brand-logo-img" id="headerLogoImg">
+        <div class="brand-text-wrap">
+          <span class="brand-name" id="headerBrandName">64 Realtors</span>
+          <span class="brand-tagline" id="headerBrandTagline">Buy | Sell | Invest</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#properties" class="nav-link">Properties</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-cta-wrap">
+        <a href="tel:+919726659963" class="btn btn-primary btn-sm" id="headerCallBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Call Now</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="#home" class="nav-link mobile-link">Home</a>
+      <a href="#about" class="nav-link mobile-link">About</a>
+      <a href="#services" class="nav-link mobile-link">Services</a>
+      <a href="#properties" class="nav-link mobile-link">Properties</a>
+      <a href="#why-us" class="nav-link mobile-link">Why Us</a>
+      <a href="#reviews" class="nav-link mobile-link">Reviews</a>
+      <a href="#faq" class="nav-link mobile-link">FAQ</a>
+      <a href="#contact" class="nav-link mobile-link">Contact</a>
+      <div class="mobile-drawer-actions">
+        <a href="tel:+919726659963" class="btn btn-primary" id="mobileDrawerCallBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Call Realtor</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary mobile-link">Send Enquiry</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-media">
+        <img src="images/hero-bg.jpg" alt="Luxury Real Estate Gandhinagar" class="hero-bg-img" id="heroBgImg">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal-on-scroll">
+          <span class="hero-badge-dot"></span>
+          <span id="heroBadgeText">Gandhinagar & GIFT City Corridor</span>
+        </div>
+        <h1 class="hero-title reveal-on-scroll" id="heroTitle">Unlocking Gandhinagar's Finest Real Estate Opportunities</h1>
+        <p class="hero-subtitle reveal-on-scroll" id="heroSubtitle">Trusted advisory for luxury homes, prime residential plots, and high-yield commercial investments.</p>
+        <div class="hero-btn-group reveal-on-scroll" id="heroButtons">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STATS STRIP -->
+    <section class="stats-section" id="statsSection">
+      <div class="container">
+        <div class="stats-grid" id="statsContainer">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ABOUT SECTION -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap reveal-on-scroll">
+            <img src="images/about-luxury.jpg" alt="64 Realtors Office" class="about-img" id="aboutImg">
+            <div class="about-corner-badge">
+              <div class="title" id="aboutBadgeTitle">64 Realtors</div>
+              <div class="sub" id="aboutBadgeSub">Gandhinagar, Gujarat</div>
+            </div>
+          </div>
+          <div class="about-text-wrap reveal-on-scroll">
+            <span class="section-tag">About Our Firm</span>
+            <h2 class="section-title" id="aboutTitle">Your Trusted Real Estate Partners</h2>
+            <div id="aboutParagraphs">
+              <!-- Populated from JSON -->
+            </div>
+            <div class="about-highlights" id="aboutHighlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&#10003;</span>
+                <span class="highlight-text">100% Clear Titles</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&#10003;</span>
+                <span class="highlight-text">Direct Partner Advisory</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&#10003;</span>
+                <span class="highlight-text">GIFT City Corridor Growth</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&#10003;</span>
+                <span class="highlight-text">Zero Hidden Brokerage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERVICES SECTION -->
+    <section class="section-padding bg-secondary" id="services">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="section-title">Comprehensive Real Estate Services</h2>
+          <p class="section-subtitle">Tailored expertise for buyers, sellers, and visionary real estate investors.</p>
+        </div>
+        <div class="services-grid" id="servicesContainer">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROPERTIES SECTION -->
+    <section class="section-padding" id="properties">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Featured Listings</span>
+          <h2 class="section-title">Explore Premium Properties</h2>
+          <p class="section-subtitle">Handpicked luxury villas, modern flats, premium plots, shops, and office spaces in Gandhinagar.</p>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="property-filter-bar reveal-on-scroll">
+          <div class="filter-pills" id="propertyStatusFilters">
+            <button type="button" class="filter-btn active" data-filter="all">All Properties</button>
+            <button type="button" class="filter-btn" data-filter="For Sale">For Sale</button>
+            <button type="button" class="filter-btn" data-filter="For Rent">For Rent</button>
+            <button type="button" class="filter-btn" data-filter="Sold">Sold</button>
+          </div>
+          <div class="filter-controls">
+            <select class="property-type-select" id="propertyTypeFilter" aria-label="Filter by property type">
+              <option value="all">All Property Types</option>
+              <option value="Villa">Villas / Bungalows</option>
+              <option value="Flat">Flats / Apartments</option>
+              <option value="Plot">Plots / Land</option>
+              <option value="Shop">Shops / Showrooms</option>
+              <option value="Office">Corporate Offices</option>
+              <option value="Penthouse">Luxury Penthouses</option>
+            </select>
+            <input type="text" class="property-search-input" id="propertySearchInput" placeholder="Search title, location, type..." aria-label="Search properties">
+          </div>
+        </div>
+
+        <!-- Properties Card Grid -->
+        <div class="properties-grid" id="propertiesContainer">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WHY CHOOSE US -->
+    <section class="section-padding bg-secondary" id="why-us">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">The 64 Advantage</span>
+          <h2 class="section-title">Why Choose 64 Realtors</h2>
+          <p class="section-subtitle">Excellence, transparency, and deep market insight at every step of your journey.</p>
+        </div>
+        <div class="why-grid" id="whyContainer">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS / REVIEWS -->
+    <section class="section-padding" id="reviews">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Client Reviews</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-subtitle">Real experiences and feedback from our valued homeowners and commercial investors.</p>
+        </div>
+        <div class="testimonials-grid" id="testimonialsContainer">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ SECTION -->
+    <section class="section-padding bg-secondary" id="faq">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear answers regarding property verification, site visits, and transactions in Gandhinagar.</p>
+        </div>
+        <div class="faq-wrap" id="faqContainer">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Connect With Our Team</h2>
+          <p class="section-subtitle">Reach out directly to our partners or submit an enquiry for personalized assistance.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Brokers + Address + Map -->
+          <div class="contact-info-col reveal-on-scroll">
+            <div class="realtor-cards-wrap" id="realtorCardsContainer">
+              <!-- Populated from JSON -->
+            </div>
+
+            <!-- Office Address -->
+            <div class="contact-info-block" id="addressBlock">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="label">Office Location</div>
+                  <div class="val" id="addressText">416, 4th Floor, Radhe Infinity, Nr. Rakhshashakti Circle, Urjanagar-1, Kudasan, Gandhinagar, Gujarat - 382426</div>
+                  <div class="map-action-row">
+                    <a href="https://maps.app.goo.gl/MHGFwp7sZcdNwyUB8" target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="mapDirectionsBtn">
+                      <span>Open in Google Maps</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div class="info-content">
+                  <div class="label">Email Address</div>
+                  <div class="val"><a href="mailto:64realtors@gmail.com" id="emailLink">64realtors@gmail.com</a></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Map Embed & Direct Link -->
+            <div class="map-container" id="mapContainer">
+              <iframe id="mapIframe" title="64 Realtors Office Map - Radhe Infinity Gandhinagar" src="https://maps.google.com/maps?q=Radhe+Infinity,+Urjanagar-1,+Kudasan,+Gandhinagar,+Gujarat+382426&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- Right Column: Quick Enquiry Form -->
+          <div class="contact-form-col reveal-on-scroll">
+            <div class="contact-form-card">
+              <h3 class="form-title">Send Quick Enquiry</h3>
+              <p class="form-subtitle">Fill the details below to instantly connect with our realtors via WhatsApp.</p>
+              
+              <form id="enquiryForm">
+                <div class="form-group">
+                  <label for="formName" class="form-label">Full Name *</label>
+                  <input type="text" id="formName" class="form-control" placeholder="e.g. Rahul Patel" required>
+                </div>
+                <div class="form-group">
+                  <label for="formPhone" class="form-label">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="formPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                  <label for="formType" class="form-label">I am interested in</label>
+                  <select id="formType" class="form-control">
+                    <option value="Buying Luxury Flat / Villa">Buying Luxury Flat / Villa</option>
+                    <option value="Residential Plot Investment">Residential Plot Investment</option>
+                    <option value="Commercial Shop / Retail Showroom">Commercial Shop / Showroom</option>
+                    <option value="Corporate Office Space">Corporate Office Space</option>
+                    <option value="Selling My Property">Selling My Property</option>
+                    <option value="General Real Estate Advisory">General Real Estate Advisory</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="formBroker" class="form-label">Connect with Realtor (WhatsApp)</label>
+                  <select id="formBroker" class="form-control">
+                    <!-- Populated dynamically with both partners from site.json -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="formMessage" class="form-label">Requirement or Message</label>
+                  <textarea id="formMessage" class="form-control" placeholder="Specify preferred budget, location (Kudasan / Urjanagar / GIFT City), or any questions..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-whatsapp btn-full" id="formSubmitBtn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                  <span>Send Enquiry via WhatsApp</span>
+                </button>
+                <p class="form-disclaimer">Instant direct connection to our realtors. No spam.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-col">
+          <a href="#home" class="brand-logo-link">
+            <img src="images/logo.png" alt="64 Realtors Logo" class="brand-logo-img" id="footerLogoImg">
+            <div class="brand-text-wrap">
+              <span class="brand-name" id="footerBrandName">64 Realtors</span>
+              <span class="brand-tagline" id="footerBrandTagline">Buy | Sell | Invest</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc" id="footerDesc">Gandhinagar's trusted real estate advisors for premium residential bungalows, luxury apartments, and high-yield commercial investments.</p>
+          <div class="social-links-wrap" id="footerSocials">
+            <!-- Populated from JSON -->
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <div class="footer-title">Navigation</div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#properties">Properties</a>
+            <a href="#why-us">Why Choose Us</a>
+            <a href="#reviews">Client Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Property Types -->
+        <div class="footer-col">
+          <div class="footer-title">Properties</div>
+          <div class="footer-links" id="footerPropertyFilterLinks">
+            <a href="#properties" data-filter-type="Villa">Luxury Villas</a>
+            <a href="#properties" data-filter-type="Flat">Modern Flats</a>
+            <a href="#properties" data-filter-type="Plot">Residential Plots</a>
+            <a href="#properties" data-filter-type="Shop">Commercial Shops</a>
+            <a href="#properties" data-filter-type="Office">Office Spaces</a>
+            <a href="#properties" data-filter-type="Penthouse">Penthouses</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Contact Snippet -->
+        <div class="footer-col">
+          <div class="footer-title">Office & Contact</div>
+          <p class="footer-address-text" id="footerAddressLines">
+            416, 4th Floor, Radhe Infinity,<br>Nr. Rakhshashakti Circle, Urjanagar-1,<br>Kudasan, Gandhinagar - 382426
+          </p>
+          <div class="footer-contact-list">
+            <a href="tel:+919726659963" class="footer-phone-link" id="footerPhone1">Dipak Prajapati: +91 97266 59963</a>
+            <a href="tel:+917096006464" class="footer-phone-link" id="footerPhone2">Suryarajsinh Chauhan: +91 70960 06464</a>
+            <a href="mailto:64realtors@gmail.com" class="footer-email-link" id="footerEmail">64realtors@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div id="footerCopyright">&copy; <span id="copyrightYear"></span> <span id="copyrightName">64 Realtors</span>. All rights reserved.</div>
+        <div class="footer-location-sub">Gandhinagar &bull; GIFT City Corridor, Gujarat</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 12. FLOATING ACTIONS -->
+  <div class="floating-actions-wrap">
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
+    <!-- Floating WhatsApp Menu with Both Partners -->
+    <div class="floating-whatsapp-wrap">
+      <div class="wa-partners-popup" id="waPartnersPopup">
+        <div class="wa-popup-header">
+          <span>Chat on WhatsApp</span>
+          <span class="wa-popup-close" id="waPopupClose">&times;</span>
+        </div>
+        <div id="waPartnersList">
+          <!-- Populated from JSON -->
+        </div>
+      </div>
+      <button type="button" class="floating-whatsapp-btn" id="floatingWhatsappBtn" aria-label="Chat on WhatsApp with our realtors" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      </button>
+    </div>
   </div>
-</main>
+
+  <!-- PROPERTY DETAILS MODAL / LIGHTBOX (100% Dynamically Injected from site.json) -->
+  <div class="modal-backdrop" id="propertyModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-window" id="modalWindow">
+      <!-- Populated dynamically on click via JavaScript -->
+    </div>
+  </div>
+
+  <!-- External JavaScript Logic -->
+  <script src="js/main.js"></script>
 </body>
 </html>
